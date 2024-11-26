@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+
+  body{
+    background-color: #e5eff5;
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+  }
+
+  h1{
+    font-size: 1.3rem;
+    color: #2ab2af;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+  }
+
+  h3{
+    font-size: 1rem;
+    padding-right: 1rem;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+  }
+
+  .container{
+    background-color: #f5f5f5;
+    height: 100vh;
+    margin: 2rem 1rem;
+    border-radius: 7px;
+  }
+
+.top {
+    margin: 1.5rem 1rem;
+
+}
+
+.topp{
+    font-size: 0.9rem;
+    padding-right: 1rem;
+    color: #98a6bd;
+}
+
+.btmleft{
+    padding: 1rem;
+    background-color: #2ab2af;
+    color: #e5eff5;
+}
+
+.price{
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.amount{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.access{
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.period{
+    font-weight: 100;
+    padding: 0.5rem;
+    color: #fafcfd85;
+}
+
+button {
+    width: 95%;
+    color: #e5eff5;
+    background-color: #c0df34;
+    border: none;
+    border-radius: 7px;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.btmright{
+    padding: 1rem;
+    background-color: #43d1cf;
+    color: #e5eff5;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.btmright p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+@media(min-width: 576px){
+    .container{
+        margin: 5rem auto;
+        height: 60vh;
+        max-width: 601px;
+        display: grid;
+        grid-template-columns: [col-start]1fr [col-2]1fr [col-end];
+        grid-template-rows: 200px 200px;
+        grid-template-areas: 
+        "t t"
+        "r l";
+    }
+
+    .top{
+        grid-area: t;
+    }
+
+    .btmright{
+        border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+    
+
+
+}
