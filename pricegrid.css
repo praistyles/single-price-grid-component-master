@@ -111,7 +111,7 @@ button {
 @media(min-width: 576px){
     .container{
         margin: 5rem auto;
-        height: 60vh;
+        height: auto;
         max-width: 601px;
         display: grid;
         grid-template-columns: [col-start]1fr [col-2]1fr [col-end];
